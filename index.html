@@ -3,127 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050505" />
-    <meta
-      name="description"
-      content="知行合一：听过不等于懂，做到才是真的知道。"
-    />
-    <title>知行合一 | Knowing Is Doing</title>
+    <meta name="theme-color" content="#020a19" />
+    <meta name="description" content="知行合一：从认知到行动，从行动到结果。" />
+    <title>知行合一 | 认知地图</title>
   </head>
   <body>
     <canvas id="webgl" aria-hidden="true"></canvas>
-    <div class="grain" aria-hidden="true"></div>
-    <div class="cursor-orbit" aria-hidden="true"></div>
-
-    <div class="loader" id="loader">
-      <div class="loader__top">
-        <span>KNOWING / DOING</span>
-        <span>2026</span>
-      </div>
-      <div class="loader__center">
-        <p class="loader__eyebrow">A JOURNEY FROM THOUGHT TO ACTION</p>
-        <h1>知行<br />合一</h1>
-        <button class="enter-button" id="enter-button" type="button">
-          <span>进入知行</span>
-          <span class="enter-button__line"></span>
-        </button>
-      </div>
-      <div class="loader__bottom">
-        <span>THOUGHT</span>
-        <span class="loader__track"><i></i></span>
-        <span>ACTION</span>
-      </div>
-    </div>
-
-    <header class="site-header" id="site-header">
-      <a class="brand" href="#origin" aria-label="知行合一首页">
-        <span class="brand__mark">知</span>
-        <span class="brand__name">知行合一</span>
-      </a>
-      <nav class="main-nav" aria-label="主要章节">
-        <a href="#origin">起源</a>
-        <a href="#knowing">认知</a>
-        <a href="#action">行动</a>
-        <a href="#attention">定力</a>
-        <a href="#archive">百句</a>
-      </nav>
-      <button class="sound-button" id="sound-button" type="button" aria-label="切换背景音乐">
-        <span class="sound-button__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span class="sound-button__label">SOUND ON</span>
-      </button>
-    </header>
-
-    <aside class="page-progress" aria-hidden="true">
-      <span class="page-progress__number" id="progress-number">01</span>
-      <span class="page-progress__line"><i id="progress-line"></i></span>
-      <span>12</span>
-    </aside>
-
-    <main>
-      <section class="hero" id="origin">
-        <div class="hero__meta">
-          <span>KNOWING IS DOING</span>
-          <span>知 · 行 · 果</span>
-        </div>
-        <div class="hero__title-wrap">
-          <p class="hero__pretitle reveal">听过不等于懂</p>
-          <h1 class="hero__title" aria-label="知行合一">
-            <span class="reveal">知行</span>
-            <span class="outline reveal">合一</span>
-          </h1>
-          <p class="hero__statement reveal">
-            落不到事上的道理，<br />
-            你并不真的懂。
-          </p>
-        </div>
-        <a class="scroll-cue" href="#manifesto">
-          <span>SCROLL TO DISCOVER</span>
-          <i></i>
-        </a>
-      </section>
-
-      <section class="manifesto" id="manifesto">
-        <div class="manifesto__label reveal">
-          <span>01 / FOUNDATION</span>
-          <span>从认知到结果</span>
-        </div>
-        <p class="manifesto__line reveal">没有执行的认知</p>
-        <p class="manifesto__line manifesto__line--right reveal">是空中楼阁</p>
-        <div class="manifesto__foot reveal">
-          <span>THINK</span>
-          <span class="manifesto__foot-line"></span>
-          <span>DO</span>
-          <span class="manifesto__foot-line"></span>
-          <span>KNOW</span>
-        </div>
-      </section>
-
-      <div id="chapters"></div>
-
-      <section class="archive" id="archive">
-        <div class="archive__header">
-          <p class="eyebrow reveal">100 NOTES / 完整索引</p>
-          <h2 class="reveal">一百次<br /><span>知与行的印证</span></h2>
-          <p class="archive__intro reveal">点击主题快速返回对应章节。所有道理，都等待一件具体的事来证明。</p>
-        </div>
-        <div class="archive__grid" id="archive-grid"></div>
-      </section>
-
-      <footer class="site-footer">
-        <div>
-          <p class="eyebrow">END / BEGIN AGAIN</p>
-          <h2>知道自己正走偏，<br />就要边走边修正。</h2>
-        </div>
-        <a href="#origin" class="back-top">返回起点 <span>↑</span></a>
-        <div class="site-footer__bottom">
-          <span>知行合一</span>
-          <span>KNOWING IS DOING</span>
-          <span>© 2026</span>
-        </div>
-      </footer>
-    </main>
-
-    <audio id="soundtrack" preload="auto" loop src="./audio/site-audio-web.mp3"></audio>
+    <div class="ambient-noise" aria-hidden="true"></div>
+    <div id="app"></div>
+    <audio id="soundtrack" preload="auto" loop src="%BASE_URL%audio/site-audio-web.mp3"></audio>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

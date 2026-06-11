@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && node scripts/create-static-routes.mjs",
     "test": "vitest"
   },
   "dependencies": {
@@ -17,4 +17,3 @@
     "vitest": "^3.2.4"
   }
 }
-
