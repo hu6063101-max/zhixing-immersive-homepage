@@ -3,3 +3,5 @@ dist/
 .superpowers/
 .vite-server.log
 .vite-server.err.log
+.brainstorm-server.log
+.brainstorm-server.err.log
